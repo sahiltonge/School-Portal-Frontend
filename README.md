@@ -9,6 +9,8 @@ A **School Listing Application** built using **Next.js** for the frontend and **
 
 Check out the live website here: [School Portal](https://school-portal-frontend-woad.vercel.app/)
 
+**Note**: Due to the free deployment server on Render, data loading and uploading may take some time (approximately 50 seconds minimum) for the first request or after the server sleeps.
+
 ---
 
 ## 📂 Project Structure
