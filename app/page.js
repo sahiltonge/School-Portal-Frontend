@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar";
 import Link from "next/link";
+import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -12,6 +14,28 @@ export default function Home() {
           <Link href="/showSchools" className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Show Schools</Link>
         </div>
       </div>
+
+      <footer className="w-full py-4 bg-gray-100 flex justify-center items-center gap-6 mt-6">
+        {/* GitHub */}
+        <Link
+          href="https://github.com/sahiltonge"
+          target="_blank"
+          className="flex items-center gap-1 text-gray-800 hover:text-black"
+        >
+          <FaGithub size={20} />
+          GitHub
+        </Link>
+
+        {/* LinkedIn */}
+        <Link
+          href="https://www.linkedin.com/in/sahil-tonge/"
+          target="_blank"
+          className="flex items-center gap-1 text-blue-600 hover:text-blue-800"
+        >
+          <FaLinkedin size={20} />
+          LinkedIn
+        </Link>
+      </footer>
     </>
   );
 }
